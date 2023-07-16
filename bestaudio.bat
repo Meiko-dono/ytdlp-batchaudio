@@ -37,7 +37,7 @@ goto pl
 set /p "goformat=Select format? [y/n]:"
 if /I not %goformat%==y goto dl
 yt-dlp -F %url%
-set /p "vidformat=Select format to download [3 digits]:"
+set /p "vidformat=Select format to download [Green ID]:"
 echo [STARTING DOWNLOAD]
 yt-dlp -f %vidformat% -o "%dc%\%%(title)s.%%(ext)s" %url%
 goto finish
