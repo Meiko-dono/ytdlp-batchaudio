@@ -3,14 +3,15 @@
 :: Make sure the path you set has the exact same format as the example given below, 
 :: where \ytdl is the folder which contains all downloaded songs
 ::
-set "dc=C:\Users\Meiko\Music\ytdl"
-::	    ^^^^^^^^^^^^^^^^^^^^^^^^^
+set "dc=C:\CHANGEME\ytdl"
+::	    ^^^^^^^^^^^^^^^^
 ::
 ::========================================================================
-echo NOTE: Make sure the correct directory is set in this file, especially in case of a playlist!
+echo [NOTE]: Current download directory used: %dc%
+echo [NOTE]: Make sure the correct directory is set inside the script before using!
 echo ============================================================================================
 :: Dev-Notes: For all occurences of 'cd' you may need /D switch in case the directory is in a different Drive
-cd "%~dp0"
+cd /D "%~dp0"
 set /a plnr=0
 set /p "url=Enter URL:"
 set /p "goplaylist=Playlist? [y/n]:"
@@ -24,7 +25,7 @@ if exist "%dc%\playlist_%plnr%\" (
 )
 echo [STARTING DOWNLOAD]
 yt-dlp -f ba -o "%dc%\playlist_%plnr%\%%(playlist_index)s_%%(title)s.%%(ext)s" %url%
-cd "%dc%\playlist_%plnr%"
+cd /D "%dc%\playlist_%plnr%"
 for %%i in (*.webm) do ffmpeg -i "%%i" -vn -c:a copy "%%~ni.ogg"
 del /q *.webm
 goto finish
@@ -48,7 +49,7 @@ yt-dlp -f ba -o "%dc%\%%(title)s.%%(ext)s" %url%
 echo ============================================================================================
 set /p "convflag=This will convert ALL '.webm' files in your base directory (w/o subfolders) to '.ogg'. Proceed? [y/n]:"
 if /I not %convflag%==y goto finish
-cd "%dc%"
+cd /D "%dc%"
 for %%i in (*.webm) do ffmpeg -i "%%i" -vn -c:a copy "%%~ni.ogg"
 del /q *.webm
 
