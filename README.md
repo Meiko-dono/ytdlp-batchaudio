@@ -1,5 +1,5 @@
-## What is ytdlp-bestaudio
-ytdlp-bestaudio - or BA in short - is a simple batch script to use [yt-dlp](https://github.com/yt-dlp/yt-dlp) to download songs from streaming platforms. 
+## What is ytdlp-batchaudio
+ytdlp-batchaudio - or BA in short - is a simple batch script to use [yt-dlp](https://github.com/yt-dlp/yt-dlp) to download songs from streaming platforms. 
 
 
 ## Requirements
