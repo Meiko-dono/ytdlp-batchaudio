@@ -7,7 +7,7 @@ ytdlp-bestaudio - or BA in short - is a simple batch script to use [yt-dlp](http
 - [ffmpeg](https://www.gyan.dev/ffmpeg/builds/) is installed.
 
 
-## Usage
+## Usage & Behaviour
 - Make sure the global path to the base directory for the downloaded songs is correctly set inside the batch file. (As described inside the script)
 - Place the batch script in the same folder containing the yt-dlp executable.
 - Run the script.
