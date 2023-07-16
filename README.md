@@ -1,5 +1,5 @@
 ## What is ytdlp-bestaudio
-ytdlp-bestaudio - or BA in short - is a simple batch script to use [yt-dlp](https://github.com/yt-dlp/yt-dlp) to primarily download songs from YouTube. 
+ytdlp-bestaudio - or BA in short - is a simple batch script to use [yt-dlp](https://github.com/yt-dlp/yt-dlp) to primarily download songs from streaming platforms. 
 
 
 ## Requirements
@@ -22,7 +22,7 @@ ytdlp-bestaudio - or BA in short - is a simple batch script to use [yt-dlp](http
 
 
 ### In case of a specific format:
-- Since BA is primarily made to download audio from YouTube, other functionalities of yt-dlp are not supported.
+- Since BA is primarily made to download audio, other functionalities of yt-dlp are not supported.
 - However the script will at least offer the option of downloading a specific format of the Video.
 - All files will be saved inside the base directory. No dedicated folder will be created for these downloads.
 
