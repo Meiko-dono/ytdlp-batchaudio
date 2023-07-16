@@ -4,13 +4,12 @@
 :: where \ytdl is the folder which contains all downloaded songs
 ::
 set "dc=C:\CHANGEME\ytdl"
-::	    ^^^^^^^^^^^^^^^^
+::      ^^^^^^^^^^^^^^^^
 ::
 ::========================================================================
 echo [NOTE]: Current download directory used: %dc%
 echo [NOTE]: Make sure the correct directory is set inside the script before using!
 echo ============================================================================================
-:: Dev-Notes: For all occurences of 'cd' you may need /D switch in case the directory is in a different Drive
 cd /D "%~dp0"
 set /a plnr=0
 set /p "url=Enter URL:"
