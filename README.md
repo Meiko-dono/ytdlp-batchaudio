@@ -31,9 +31,3 @@ ytdlp-batchaudio - or BA in short - is a simple batch script to use [yt-dlp](htt
 - BA will assume that the given URL is a simple video link.
 - This will simply download the video at `ba` config and store the result in the base directory.
 - At the end BA will ask you, if it should convert ALL `.webm` files in the base directory (excluding subdirectories) to `.ogg`.
-
-
-### Disclaimer
-Permission is hereby granted, free of charge, to any person obtaining a copy of this script and associated documentation files, to use the script without restriction.
-
-THIS SCRIPT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANYKIND, EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SCRIPT OR THE USE OR OTHER DEALINGS IN THIS SCRIPT.
